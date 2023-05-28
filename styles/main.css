@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 15px;
+}
+
+.user__card {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 6px;
+  background-color: rgba(199, 198, 198, 0.5);
+}
+.user__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+@media (max-width: 440px) {
+  .user__info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.user__info--data {
+  display: flex;
+  align-items: center;
+}
+.user__info--data img {
+  width: 100px;
+}
+.user__info--role {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 4px;
+  border-radius: 6px;
+  background-color: rgba(204, 107, 252, 0.3);
+}
+.user__info--role img {
+  width: 50px;
+}
+
+.courses {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+@media (max-width: 655px) {
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.courses__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.courses .mark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgba(204, 107, 252, 0.3);
+}
+.courses .mark__score {
+  background-color: rgba(129, 255, 40, 0.5);
+  padding: 12px;
+  border-radius: 6px;
+}
